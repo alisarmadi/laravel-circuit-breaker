@@ -1,0 +1,14 @@
+{
+    "name": "snapp-doctor/circuit-breaker",
+    "autoload": {
+        "psr-4": {
+            "SnappDoctor\\CircuitBreaker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ali Sarmadi"
+        }
+    ],
+    "require": {}
+}
