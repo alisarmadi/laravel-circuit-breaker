@@ -5,6 +5,11 @@
             "SnappDoctor\\CircuitBreaker\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "SnappDoctor\\CircuitBreaker\\Tests\\": "tests"
+        }
+    },
     "authors": [
         {
             "name": "Ali Sarmadi"
@@ -14,6 +19,23 @@
         "php": "^7.4"
     },
     "require-dev": {
-        "pestphp/pest": "^1.21"
-    }
+        "pestphp/pest": "^1.21",
+        "pestphp/pest-plugin-laravel": "^1.1"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SnappDoctor\\CircuitBreaker\\CircuitBreakerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

@@ -1,7 +1,7 @@
 <?php
 
-use Bvtterfly\LaravelCircuitBreaker\CircuitBreaker;
-use Bvtterfly\LaravelCircuitBreaker\Config;
+use SnappDoctor\CircuitBreaker\CircuitBreaker;
+use SnappDoctor\CircuitBreaker\Config;
 use Illuminate\Cache\Repository;
 
 it('should available & close', function () {
