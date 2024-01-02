@@ -25,9 +25,5 @@ class CircuitBreakerServiceProvider extends ServiceProvider
             $cacheManager = app(CacheManager::class);
             return new CircuitBreaker('default-service', $circuitConfig, $cacheManager->store($circuitConfig->getStore()));
         });
-
-        $this->app->singleton(CircuitBreakerManager::class, function () {
-            return new CircuitBreakerManager(app(CacheManager::class), config('circuit-breaker'));
-        });
     }
 }

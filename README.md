@@ -1,1 +1,1 @@
-# laravel-circuit-breaker
+# circuit-breaker

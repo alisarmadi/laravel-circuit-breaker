@@ -16,17 +16,15 @@
         }
     ],
     "require": {
-        "php": "^7.4"
+        "php": "^7.4",
+        "illuminate/support": "^7.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^7.0"
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "^5.0"
     },
     "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true
-        }
+        "sort-packages": true
     },
     "extra": {
         "laravel": {

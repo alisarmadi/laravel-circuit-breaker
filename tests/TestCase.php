@@ -18,9 +18,4 @@ class TestCase extends Orchestra
             CircuitBreakerServiceProvider::class,
         ];
     }
-
-    public function getEnvironmentSetUp($app)
-    {
-//        config()->set('database.default', 'testing');
-    }
 }
