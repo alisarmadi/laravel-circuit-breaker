@@ -15,7 +15,6 @@ class CircuitBreakerTest extends TestCase
     public function test_circuit_breaker_should_available_and_close(array $configArray): void
     {
         $config = Config::fromArray($configArray);
-
         $circuitBreaker = new CircuitBreaker('test', $config, app(Repository::class));
 
         $this->assertTrue($circuitBreaker->isClose());
