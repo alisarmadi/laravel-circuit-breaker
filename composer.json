@@ -10,5 +10,10 @@
             "name": "Ali Sarmadi"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.21"
+    }
 }
